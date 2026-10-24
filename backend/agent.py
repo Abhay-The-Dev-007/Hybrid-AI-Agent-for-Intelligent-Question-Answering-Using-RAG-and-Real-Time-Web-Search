@@ -57,8 +57,8 @@ class RagJudge(BaseModel):
 os.environ["GROQ_API_KEY"]=GROQ_API_KEY
 
 
-router_llm=ChatGroq(model="openai/gpt-oss-20b", temperature=0).with_structured_output(RouteDecision)
-judge_llm=ChatGroq(model="openai/gpt-oss-20b", temperature=0).with_structured_output(RagJudge)
+router_llm=ChatGroq(model="openai/gpt-oss-20b", temperature=0).with_structured_output(RouteDecision,method="json_schema")
+judge_llm=ChatGroq(model="openai/gpt-oss-20b", temperature=0).with_structured_output(RagJudge,method="json_schema")
 answer_llm=ChatGroq(model="openai/gpt-oss-20b", temperature=0.7)
 
 # defining state : shared data structure
