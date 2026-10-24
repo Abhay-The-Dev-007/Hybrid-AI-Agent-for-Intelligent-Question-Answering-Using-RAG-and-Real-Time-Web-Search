@@ -51,14 +51,3 @@ This architecture combines internal knowledge retrieval and external information
 
 The following diagram illustrates the agent's routing logic, including RAG retrieval, web search, answer generation, and workflow termination.
 
-<p align="center">
-  <img
-    src="assets/agent_workflow.png"
-    alt="Hybrid AI Agent workflow showing router, RAG lookup, web search, answer generation, and end states"
-    width="600"
-  />
-</p>
-
-<p align="center">
-  <em>Figure: Workflow architecture of the Hybrid AI Agent.</em>
-</p>
